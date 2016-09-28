@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Teste de Aprendizado</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-validation.js"></script>
+    <script src="js/additional-methods.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+
+  </head>
+
+  <body>
+   	<div class="faixa">
+    	<div class="container">
+			<div class="jumbotron">
+				<div class="header col-xs-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="col-md-12 logo">
+						<a href="http://www.cchla.ufpb.br/ccmd/"><img src="images/logo.png"></img></a>
+					</div>
+					<h3 class="text-muted">INVENTÁRIO DE ESTILO DE APRENDIZAGEM</h3>
+				</div>
+				<p>O questionário abaixo foi idealizado por David A. Kolb e descreve a maneira pela qual você aprende e como lida com ideias e situações do dia-a-dia em sua vida.</p>
+				<p>Descrição de como responder o questionário aqui.</p>
+				<form id="formulario">
+					<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+				<!-- Pergunta 1 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>1. Enquanto aprendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>gosto de lidar com meus sentimentos</label><br>
+								<div class="radio-inline">
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+								</div>
+							<br><label>gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio" disabled>3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio" disabled>3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio" disabled>3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 1 -->
+				<!-- Pergunta 2 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>2. Aprendo melhor quando...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>ouço e observo com atenção</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>me apoio em pensamento lógico</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>confio em meus palpites e impressões</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>trabalho com afinco para executar a tarefa</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 2 -->
+				<!-- Pergunta 3 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>3. Quando estou aprendendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>tendo a buscar explicações para as coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>sou responsável acerca das coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>fico quieto e concentrado</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>tenho sentimentos e reações fortes</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 3 -->
+				<!-- Pergunta 4 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>4. Aprendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 4 -->
+				<!-- Pergunta 5 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>5. Enquanto aprendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 5 -->
+				<!-- Pergunta 6 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>6. Enquanto estou aprendendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 6 -->
+				<!-- Pergunta 7 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>7. Aprendo melhor através de...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 7 -->
+				<!-- Pergunta 8 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>8. Enquanto aprendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 8 -->
+				<!-- Pergunta 9 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>9. Aprendo melhor quando...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 9 -->
+				<!-- Pergunta 10 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>10. Quando estou aprendendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 10 -->
+				<!-- Pergunta 11 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>11. Enquanto aprendo...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 11 -->
+				<!-- Pergunta 12 -->
+						<hr>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<h3>12. Aprendo melhor quando...</h3>
+						</div>
+						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6" id="campos2">
+							<label>Gosto de lidar com meus sentimentos</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de pensar sobre ideias</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de estar fazendo coisas</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+							<br><label>Gosto de observar e escutar</label><br>
+								<label class="radio-inline"><input type="radio" name="optradio">1</label>
+								<label class="radio-inline"><input type="radio" name="optradio">2</label>
+								<label class="radio-inline"><input type="radio" name="optradio">3</label>
+								<label class="radio-inline"><input type="radio" name="optradio">4</label>
+						</div>
+						<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12" id="campos2">
+							<hr>
+						</div>
+				<!-- Fim da pergunta 12 -->
+
+					</div>	
+
+						<p id="motivacional" class="frase-motivadora text-muted " style="font-size: 14px;"></p>
+						<div class="linha"></div>	
+						<input class="submit btn btn-lg btn-success" value="Resultado" id="botao" type="submit">
+				</form>
+				<footer class="footer">
+					<h3>
+					<a href="https://github.com/interfaceslivres?tab=repositories"><img src="images/logo-interfaces-mini.jpg"> </a>
+					</h3>
+					<a href="#" id="info"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a>
+				
+		      </footer>
+			</div>
+		</div>
+	</div>
+		
+
+		<div class="modal fade" id="modal-container-resultado" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog  modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							 
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+							<h4 class="modal-title" id="myModalLabel">Resultado:</h4>
+						</div>
+						<div class="modal-body">
+							<h1 id="resultado"></h1>
+							<h3 id="resultado-final"></h3>
+		  <canvas id="myChart" width="200" height="100"></canvas>						
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ["Experiência Concreta", "Observação Reflexiva", "Conceituação Abstrata", "Experimentação Ativa"],
+        datasets: [{
+            label: '# of Votes',
+            data: [42, 18, 19, 41],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+						</div>
+						<div class="modal-footer">
+							 
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+					<div class="modal fade" id="modal-container-info" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog  modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							 
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+							<h4 class="modal-title" id="myModalLabel">Informações Importantes</h4>
+						</div>
+						<div class="modal-body" style="text-align: left;">
+							<ul>
+							<li>Os cálculos são feitos com base na Resolução Nº49/80 da UFPB. Se você não for aluno da UFPB verifique se a instituição que estuda utiliza o mesmo sistema de avaliação que a UFPB.</li>
+							<li>Sobre o cálculo feito aqui.
+							<ul>
+								<li>A média das <b>atividades regulares é aritmética</b>, a calculadora soma todas as notas e divide pela quantidade de notas inseridas.</li>
+								<li>De acordo com a Resolução nº 49/80 o aluno é aprovado se conseguir média das atividades regulares <b>maior ou igual a sete</b>;</li>
+								<li>Se não conseguir atingir a média sete nas atividades regulares o aluno tem direito a um exame final;</li>
+								<li>No exame final é aprovado o aluno que atingir a <b>média final cinco</b>;</li>
+								<li>A média das atividades regulares compõe 60% da média final e a nota da prova final 40%.</li>
+								<li>O aluno está automaticamente <b>reprovado</b> e sem direito à prova final se obtiver <b>média das atividades regulares menor que quatro</b>.</li>
+							</ul>
+							 </li>
+							</ul>
+							<p>Para mais informaçoes acesse a <a href="http://www.ufpb.br/sods/consepe/resolu/Rsep49_80.htm">Resolução Nº49/80 da UFPB</a>.</p>
+						
+						</div>
+						<div class="modal-footer">
+							 
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+ 
+
+    
+
+  </body>
+</html>
