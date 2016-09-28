@@ -1,5 +1,15 @@
-			
-$(document).ready(function() {
+$(document).ready(function() {			
+//Bloquear radios
+
+$( "#p1r1" ).on( "click", function() {
+	console.log("oi");
+    writeData();
+});
+function writeData() {
+	jQuery("#p2r1").attr('disabled', 'disabled');
+	jQuery("#p3r1").attr('disabled', 'disabled');
+	jQuery("#p4r1").attr('disabled', 'disabled');
+}
 
  var frases = ["Que a força esteja com você!", "Pense como um próton e mantenha-se positivo.", "Você só falha quando para de tentar."];
 
@@ -149,6 +159,8 @@ $("#formulario").submit(function(e){
 					    onclick: false,
 					    wrapper: "li"
 
+
+
 				});  
 
 
@@ -267,3 +279,5 @@ function removerNota(){
 }
     
 });
+
+
