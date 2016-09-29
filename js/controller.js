@@ -1,15 +1,33 @@
 $(document).ready(function() {			
 //Bloquear radios
 
-$( "#p1r1" ).on( "click", function() {
-	console.log("oi");
-    writeData();
+// AMIGO HAROLDO, fiz a função assim: 
+
+$('input[type="radio"]').on( "click", function() {
+	var linha = event.target.id;
+	console.log(linha);
+	if (linha == "p1r1") {
+		$('.linha1:checked').not(this).attr('checked', false);
+	}
+	if (linha == "p1r2") {
+		$('.linha2:checked').not(this).attr('checked', false);
+	}
+	if (linha == "p1r3") {
+		$('.linha3:checked').not(this).attr('checked', false);
+	}
+	if (linha == "p1r4") {
+		$('.linha4:checked').not(this).attr('checked', false);
+	}
 });
-function writeData() {
-	jQuery("#p2r1").attr('disabled', 'disabled');
-	jQuery("#p3r1").attr('disabled', 'disabled');
-	jQuery("#p4r1").attr('disabled', 'disabled');
-}
+
+// mas perceba que é possivel você usar como classe as colunas 
+// e não as linhas, para que desse modo, você nao precise alterar 
+// o estilo visual da página.
+// não sei se foi melhor fazer o reuso, estou achando que existem muitas 
+// divs desnecessárias. veja se consegue uma limpeza. o/
+
+
+
 
  var frases = ["Que a força esteja com você!", "Pense como um próton e mantenha-se positivo.", "Você só falha quando para de tentar."];
 
