@@ -3,6 +3,18 @@ body{
   background-color: #f3f3f4;
 }
 
+
+#campos2 p {
+  font-size: 12px;
+
+}
+
+.grupo1, .grupo2, .grupo3, .grupo4 {
+  float: left;
+
+}
+
+
 .header,
 .footer {
   padding-right: 15px;
