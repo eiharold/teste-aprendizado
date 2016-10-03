@@ -4,28 +4,213 @@ $(document).ready(function() {
 // AMIGO HAROLDO, fiz a função assim: 
 
 $('input[type="radio"]').on( "click", function() {
-	var linha = event.target.id;
-	console.log(linha);
-	if (linha == "p1r1") {
-		$('.linha1:checked').not(this).attr('checked', false);
+
+ if  ($(event.target).hasClass("p1")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p1:checked').not(this).attr('checked', false);
 	}
-	if (linha == "p1r2") {
-		$('.linha2:checked').not(this).attr('checked', false);
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p1:checked').not(this).attr('checked', false);
 	}
-	if (linha == "p1r3") {
-		$('.linha3:checked').not(this).attr('checked', false);
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p1:checked').not(this).attr('checked', false);
 	}
-	if (linha == "p1r4") {
-		$('.linha4:checked').not(this).attr('checked', false);
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p1:checked').not(this).attr('checked', false);
 	}
+
+ }
+
+ if  ($(event.target).hasClass("p2")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p2:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p2:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p2:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p2:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+if  ($(event.target).hasClass("p3")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p3:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p3:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p3:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p3:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+if  ($(event.target).hasClass("p4")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p4:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p4:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p4:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p4:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+if  ($(event.target).hasClass("p5")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p5:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p5:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p5:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p5:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+if  ($(event.target).hasClass("p6")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p6:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p6:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p6:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p6:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+if  ($(event.target).hasClass("p7")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p7:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p7:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p7:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p7:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+ if  ($(event.target).hasClass("p8")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p8:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p8:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p8:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p8:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+
+ if  ($(event.target).hasClass("p9")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p9:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p9:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p9:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p9:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+ if  ($(event.target).hasClass("p10")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p10:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p10:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p10:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p10:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+ if  ($(event.target).hasClass("p11")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p11:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p11:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p11:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p11:checked').not(this).attr('checked', false);
+	}
+
+ }
+
+ if  ($(event.target).hasClass("p12")) {
+
+	if ( $(event.target).hasClass("coluna1") ) {
+		$('.coluna1.p12:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna2") ) {
+		$('.coluna2.p12:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna3") ) {
+		$('.coluna3.p12:checked').not(this).attr('checked', false);
+	}
+	if ( $(event.target).hasClass("coluna4") ) {
+		$('.coluna4.p12:checked').not(this).attr('checked', false);
+	}
+
+ }
+
 });
-
-// mas perceba que é possivel você usar como classe as colunas 
-// e não as linhas, para que desse modo, você nao precise alterar 
-// o estilo visual da página.
-// não sei se foi melhor fazer o reuso, estou achando que existem muitas 
-// divs desnecessárias. veja se consegue uma limpeza. o/
-
 
 
 

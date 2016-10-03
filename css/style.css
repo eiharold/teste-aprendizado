@@ -4,7 +4,7 @@ body{
 }
 
 
-#campos2 p {
+.campos2 p {
   font-size: 12px;
 
 }
@@ -58,7 +58,7 @@ body{
   margin-top: 15px; 
 }
 
-#campos2 {
+.campos2 {
  text-align: left;
 }
 
