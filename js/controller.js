@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 $('input[type="radio"]').on( "click", function() {
 
+
  if  ($(event.target).hasClass("p1")) {
 
 	if ( $(event.target).hasClass("coluna1") ) {
@@ -234,20 +235,41 @@ if  ($(event.target).hasClass("p7")) {
 $("#formulario").submit(function(e){
 					    e.preventDefault()
 					})
+				 
+
+// SOMAR VALORES
+
+//$('input:radio[name="1op1"]').on( "click", function() {
+  //     if ($(this).attr('checked', true)) {
+    //   	var pontos = ($(this).val());
+	//	console.log(pontos);
+	//			}
+	//			});
+
+// VARIAVEIS
+
+var EC = 0;
+var OR = 0;
+var CA = 0;
+var EA = 0;
+
+//ESTILOS DE APRENDIZAGEM PREDOMINANTE
+
+var ap1 = CA - EC; //+abstrata ou -concreta
+var ap2 = EA - OR; //+ativa ou -reflexiva
 
 
-// DESCOBRIR ESTILO
+//SOMATORIO DO RESULTADO
 
+							var divergente = EC + OR;
+							var assimilador = OR + CA;
+							var convergente = CA + EA;
+							var acomodador = EA + EC;
+							var resultadosomas = Math.max(divergente, assimilador, convergente, acomodador);
 
-				function descobrirEstilo (){
-							var estilo = "ACOMODADOR"; //ACOMODADOR, CONVERGENTE, ASSIMILADOR, DIVERGENTE.
-							document.getElementById("resultado-final").innerHTML = " Seu estilo de aprendizado é " + estilo;
+//RESULTADO 
 
-				}
-				  
-// RESULTADO
-
-		$("#botao").click(function() {	
+	$("#botao").click(function() {	
 					
 					descobrirEstilo();					
 
@@ -255,7 +277,303 @@ $("#formulario").submit(function(e){
       					show: true
     				});
 
-			
+
+//CALCULO EC
+
+	//1A
+				if ($("input[name='1opA']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='1opA']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='1opA']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='1opA']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+	//2C
+				if ($("input[name='2opC']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='2opC']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='2opC']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='2opC']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//3D
+				if ($("input[name='3opD']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='3opD']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='3opD']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='3opD']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//4A
+				if ($("input[name='4opA']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='4opA']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='4opA']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='4opA']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//5A
+				if ($("input[name='5opA']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='5opA']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='5opA']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='5opA']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//6C
+				if ($("input[name='6opC']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='6opC']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='6opC']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='6opC']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//7B
+				if ($("input[name='7opB']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='7opB']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='7opB']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='7opB']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//8D
+				if ($("input[name='8opD']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='8opD']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='8opD']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='8opD']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//9B
+				if ($("input[name='9opB']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='9opB']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='9opB']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='9opB']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//10B
+				if ($("input[name='10opB']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='10opB']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='10opB']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='10opB']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//11A
+				if ($("input[name='11opA']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='11opA']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='11opA']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='11opA']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+	//12B
+				if ($("input[name='12opB']:checked").val() == "1") {
+				       	EC = EC + 1;
+						
+								}
+				if ($("input[name='12opB']:checked").val() == "2") {
+				       	EC = EC + 2;
+						
+								}
+				if ($("input[name='12opB']:checked").val() == "3") {
+				       	EC = EC + 3;
+						
+								}
+				if ($("input[name='12opB']:checked").val() == "4") {
+				       	EC = EC + 4;
+						
+								}
+
+
+
+// DESCOBRIR ESTILO
+
+
+				function descobrirEstilo (){
+							
+							var estilo = "";
+
+							if (resultadosomas == divergente) {
+								estilo = "DIVERGENTE"
+							}
+
+							if (resultadosomas == assimilador) {
+								estilo = "ASSIMILADOR" 
+							}
+
+							if (resultadosomas == convergente) {
+								estilo = "CONVERGENTE" 
+							}
+
+							if (resultadosomas == acomodador) {
+								estilo = "ACOMODADOR"
+							}
+							document.getElementById("resultado-final").innerHTML = " Seu estilo de aprendizado é " + estilo;
+								var forma1 = "concreta";
+								var forma2 = "reflexiva";
+								if (ap1 > 0) {
+									forma1 = "abstrata";
+								}
+								if (ap2 > 0) {
+									forma2 = "ativa"
+								}
+							document.getElementById("resultado-final2").innerHTML = " Sua forma de aprender é " + forma1 + " e " + forma2 + ".";
+
+				}
+
+// GERANDO GRAFICO
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ["Experiência Concreta", "Observação Reflexiva", "Conceituação Abstrata", "Experimentação Ativa"],
+        datasets: [{
+            label: 'Pontuação nesse quesito',
+            data: [EC, OR, CA, EA],
+            backgroundColor: [
+                'rgba(99, 132, 255, 0.2)',
+                
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
 		});
     
 });
