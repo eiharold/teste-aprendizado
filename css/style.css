@@ -3,6 +3,9 @@ body{
   background-color: #f3f3f4;
 }
 
+.modal-body p {
+text-align: left;
+}
 
 .campos2 p {
   font-size: 12px;
@@ -40,7 +43,7 @@ body{
   margin-bottom: 0;
   line-height: 40px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 36px;
   color: #c4c4c5;
 }
 
@@ -142,6 +145,12 @@ margin: 0;
           border-radius: 0 !important;
   padding: 0px !important;  
   box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.75);
+}
+
+.jumbotron p {
+  font-size: 16px;
+  text-align: left;
+  margin:20px;
 }
 
 .jumbotron .btn {

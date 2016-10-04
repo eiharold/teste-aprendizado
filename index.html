@@ -42,10 +42,17 @@
 					<div class="col-md-12 logo">
 						<a href="http://www.cchla.ufpb.br/ccmd/"><img src="images/logo.png"></img></a>
 					</div>
-					<h3 class="text-muted">INVENTÁRIO DE ESTILO DE APRENDIZAGEM</h3>
+				<h3 class="text-muted">INVENTÁRIO DE ESTILO DE APRENDIZAGEM</h3>
 				</div>
-				<p>O questionário abaixo foi idealizado por David A. Kolb e descreve a maneira pela qual você aprende e como lida com ideias e situações do dia-a-dia em sua vida.</p>
-				<p>Descrição de como responder o questionário aqui.</p>
+				<center>
+					<h4>
+					O questionário abaixo foi idealizado por David A. Kolb e descreve a maneira pela qual você aprende e como lida com ideias e situações do dia-a-dia em sua vida.
+					</h4>
+				</center>
+				<hr>
+				<p>Abaixo você encontrará 12 sentenças. Cada sentença tem quatro campos de resposta (A, B, C, D). Classifique cada campo de forma a retratar a maneira como você age ao ter que aprender algo. Procure recordar de algumas situações recentes que você teve que aprender algo novo, seja no trabalho, na universidade ou em sua vida pessoal. Classifique com “4” o complemento da sentença que caracteriza como você aprende melhor, decrescendo até indicar “1” para o complemento da sentença que caracteriza a maneira menos provável de como você aprende algo.
+				<br>
+				Assegure-se de que todas as respostas foram emitidas para cada sentença.</p>
 
 
 			<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 campos2"> <!-- bloco de perguntas -->
@@ -56,7 +63,7 @@
 						</div>
 						<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 campos2">
 							<label>gosto de lidar com meus sentimentos</label><br>
-								<form>
+								<form id="formulario">
 								<div class="radio-inline">
 								<label class="radio-inline"><input type="radio" name="optradio" class="linha1 coluna1 p1">1</label>
 								<label class="radio-inline"><input type="radio" name="optradio" class="linha1 coluna2 p1">2</label>
@@ -615,11 +622,15 @@
 						</div>
 				<!-- Fim da pergunta 12 -->
 			</div>	
-					<p id="motivacional" class="frase-motivadora text-muted " style="font-size: 14px;"></p>
+					<!-- Frase Motivacional -->
+				<center>
+					<div id="motivacional" class="frase-motivadora text-muted " style="font-size: 14px;"></div>
 					<div class="linha"></div>	
 					<input class="submit btn btn-lg btn-success" value="Resultado" id="botao" type="submit">
-				</form>
+				</center>
+			</form>
 
+<!-- Footer -->
 				<footer class="footer">
 					<h3>
 					<a href="https://github.com/interfaceslivres?tab=repositories"><img src="images/logo-interfaces-mini.jpg"> </a>
@@ -631,7 +642,7 @@
 		</div>
 	</div>
 		
-
+<!-- Box resultado -->
 		<div class="modal fade" id="modal-container-resultado" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog  modal-lg">
 					<div class="modal-content">
@@ -643,7 +654,10 @@
 						<div class="modal-body">
 							<h1 id="resultado"></h1>
 							<h3 id="resultado-final"></h3>
+		  
+<!-- Grafico -->
 		  <canvas id="myChart" width="200" height="100"></canvas>						
+
 <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
@@ -684,6 +698,95 @@ var myChart = new Chart(ctx, {
 });
 </script>
 
+</center>
+
+<!-- Fim grafico / Inicio descricao -->
+
+<br>
+
+<h4>DESCRIÇÃO DOS ESTILOS DE APRENDIZAGEM</h4>
+
+<p><b>CONVERGENTE (EA/CA)</b> – Você aprende melhor pensando e realizando. Combina o gosto
+
+de colocar “a mão na massa” com aspectos teóricos. Gosta de realizar atividades com
+
+indicações sequenciais detalhadas (como aquelas dos manuais de operação de aparelhos),
+
+solucionar problemas específicos e testar hipóteses (tentativa e erro). Tem habilidades em
+
+encontrar aplicações práticas para ideias e teorias. Pessoas desse estilo possuem poucas
+
+habilidades sociais e intrapessoais, preferindo ambientes de aprendizagem mais
+
+tranquilos (ex.: gosta de trabalha sozinho realizando tarefas técnicas sem se relacionarem
+
+com outras pessoas). Parecem se sair melhor em situações nas quais existe uma única
+
+resposta ou solução correta para cada pergunta ou problema. Não tem dificuldades ao
+
+experimentar inovações para solucionar problemas práticos. Esse estilo também é
+
+conhecido como PRAGMÁTICO.</p>
+
+<p><b>ACOMODADOR (EC/EA)</b> – Você aprende melhor experimentando e realizando, como, por
+
+exemplo, através de atividades práticas, apresentações, role-plays e debates. Combina o
+
+gosto de colocar “a mão na massa” com atividades concretas. Tem capacidade de se
+
+sobressair e acomodar ou adaptar a circunstâncias imediatas específicas. Utiliza mais a
+
+intuição do que a lógica e tem a tendência a se arriscar mais a ousar mais. Costuma utilizar
+
+a opinião de outras pessoas ao invés das suas próprias, por isso geralmente faz muitas
+
+perguntas. Assume uma abordagem prática e vivencial. É sociável e gosta de trabalhar em
+
+equipe. Geralmente exerce um papel importante em situações onde são necessárias ações
+
+e iniciativas para a realização de tarefas. Por terem pouca habilidade analítica são
+
+impulsivas e as vezes é percebido como impaciente e pressionador. Esse estilo também é
+
+conhecido como ATIVISTA.</p>
+
+<p><b>ASSIMILADOR (CA/OR)</b> – você aprende melhor combinando observação e pensamento,
+
+por isso suas preferências por palestras, conferências e aulas. Para eles, ideias e conceitos
+
+abstratos são mais importantes do que pessoas e pode ser percebido como pouco sociável.
+
+Tem facilidade com números e modelos conceituais, preferindo especulações abstratas em
+
+detrimento de situações práticas. Compreende as informações de forma ampla e as
+
+organizam de forma clara e lógica. Tem propensão para a carreira científica. Gosta de
+
+explorar modelos analíticos e de ter tempo para pensar e refletir sobre as coisas. Esse
+
+estilo também é conhecido como TEÓRICO.</p>
+
+<p><b>DIVERGENTE (OR/EC)</b> – você aprende melhor combinando sensações com observações,
+
+ou seja através de atividades práticas seguidas de um retorno. Possui muita sensibilidade
+
+artística e conseguem ver as coisas de perspectivas diferentes. Prefere observar ao invés
+
+de agir. Suas estratégias para a solução de problemas iniciam coletando informações para
+
+em seguida usarem a criatividade e a inventividade para oferecer mais de uma solução
+
+possível. A denominação “divergentes” se dá pelo fato de terem bom desempenho em
+
+situações que requerem geração de ideias, como grupos de trabalho e brainstorms.
+
+Possuem vasto interesse cultural e gostam de pessoas. Preferem trabalhar em grupo,
+
+ouvindo sugestões com mente aberta e recebendo feedbacks pessoais. Gostam de
+
+autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEXIVO.</p>
+
+
 						</div>
 						<div class="modal-footer">
 							 
@@ -694,7 +797,8 @@ var myChart = new Chart(ctx, {
 				
 			</div>
 			
-					<div class="modal fade" id="modal-container-info" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Fim resultado / Inicio Box Info -->
+			<div class="modal fade" id="modal-container-info" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog  modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -704,19 +808,10 @@ var myChart = new Chart(ctx, {
 						</div>
 						<div class="modal-body" style="text-align: left;">
 							<ul>
-							<li>Os cálculos são feitos com base na Resolução Nº49/80 da UFPB. Se você não for aluno da UFPB verifique se a instituição que estuda utiliza o mesmo sistema de avaliação que a UFPB.</li>
-							<li>Sobre o cálculo feito aqui.
-							<ul>
-								<li>A média das <b>atividades regulares é aritmética</b>, a calculadora soma todas as notas e divide pela quantidade de notas inseridas.</li>
-								<li>De acordo com a Resolução nº 49/80 o aluno é aprovado se conseguir média das atividades regulares <b>maior ou igual a sete</b>;</li>
-								<li>Se não conseguir atingir a média sete nas atividades regulares o aluno tem direito a um exame final;</li>
-								<li>No exame final é aprovado o aluno que atingir a <b>média final cinco</b>;</li>
-								<li>A média das atividades regulares compõe 60% da média final e a nota da prova final 40%.</li>
-								<li>O aluno está automaticamente <b>reprovado</b> e sem direito à prova final se obtiver <b>média das atividades regulares menor que quatro</b>.</li>
+							<li>Aqui vem umas informações</li>
+							<li>Que talvez sejam interessantes de listar</li>
 							</ul>
-							 </li>
-							</ul>
-							<p>Para mais informaçoes acesse a <a href="http://www.ufpb.br/sods/consepe/resolu/Rsep49_80.htm">Resolução Nº49/80 da UFPB</a>.</p>
+							<p>Para mais informaçoes acesse a <a href="#">Esta página</a>.</p>
 						
 						</div>
 						<div class="modal-footer">
