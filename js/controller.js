@@ -2,33 +2,33 @@ $(document).ready(function() {
 
 //BLOCK RADIOS
 
-$('input[type="radio"]').on( "click", function() {
+	$('input[type="radio"]').on( "click", function() {
 
-for (p=1; p < 13; p++) {
-	for (i=1; i < 5; i++) {
+	for (p=1; p < 13; p++) {
+		for (i=1; i < 5; i++) {
 
-		 if  ($(event.target).hasClass("p"+p)) {
+			 if  ($(event.target).hasClass("p"+p)) {
 
-			if ( $(event.target).hasClass("coluna"+i) ) {
-				$('.coluna'+i+'.p'+p+':checked').not(this).attr('checked', false);
-			}
+				if ( $(event.target).hasClass("coluna"+i) ) {
+					$('.coluna'+i+'.p'+p+':checked').not(this).attr('checked', false);
+				}
 
-		 }
+			 }
+		}
 	}
-}
 
-});
+	});
 
 //FRASES
 
- var frases = ["Que a força esteja com você!", "Pense como um próton e mantenha-se positivo.", "Você só falha quando para de tentar."];
+	 var frases = ["Que a força esteja com você!", "Pense como um próton e mantenha-se positivo.", "Você só falha quando para de tentar."];
 
-  function incentivo(){
-    var i = parseInt(Math.random()*3);
-    return frases[i];
-    }
- 
- document.getElementById("motivacional").innerHTML = incentivo() ;
+	  function incentivo(){
+	    var i = parseInt(Math.random()*3);
+	    return frases[i];
+	    }
+	 
+	 document.getElementById("motivacional").innerHTML = incentivo() ;
 
 //CAIXA DE INFORMACAO - ((( DESABILITADA )))
 
@@ -57,10 +57,10 @@ for (p=1; p < 13; p++) {
 
 // VARIAVEIS DE DESCRICAO
 
-var descricaoConvergente = "Você aprende melhor pensando e realizando. Combina o gosto de colocar “a mão na massa” com aspectos teóricos. Gosta de realizar atividades com indicações sequenciais detalhadas (como aquelas dos manuais de operação de aparelhos), solucionar problemas específicos e testar hipóteses (tentativa e erro). Tem habilidades em encontrar aplicações práticas para ideias e teorias. Pessoas desse estilo possuem poucas habilidades sociais e intrapessoais, preferindo ambientes de aprendizagem mais tranquilos (ex.: gosta de trabalha sozinho realizando tarefas técnicas sem se relacionarem com outras pessoas). Parecem se sair melhor em situações nas quais existe uma única resposta ou solução correta para cada pergunta ou problema. Não tem dificuldades ao experimentar inovações para solucionar problemas práticos. Esse estilo também é conhecido como PRAGMÁTICO.";
-var descricaoAcomodador = "Você aprende melhor experimentando e realizando, como, por exemplo, através de atividades práticas, apresentações, role-plays e debates. Combina o gosto de colocar “a mão na massa” com atividades concretas. Tem capacidade de se sobressair e acomodar ou adaptar a circunstâncias imediatas específicas. Utiliza mais a intuição do que a lógica e tem a tendência a se arriscar mais a ousar mais. Costuma utilizar a opinião de outras pessoas ao invés das suas próprias, por isso geralmente faz muitas perguntas. Assume uma abordagem prática e vivencial. É sociável e gosta de trabalhar em equipe. Geralmente exerce um papel importante em situações onde são necessárias ações e iniciativas para a realização de tarefas. Por terem pouca habilidade analítica são impulsivas e as vezes é percebido como impaciente e pressionador. Esse estilo também é conhecido como ATIVISTA.";
-var descricaoAssimilador = "Você aprende melhor combinando observação e pensamento, por isso suas preferências por palestras, conferências e aulas. Para eles, ideias e conceitos abstratos são mais importantes do que pessoas e pode ser percebido como pouco sociável. Tem facilidade com números e modelos conceituais, preferindo especulações abstratas em detrimento de situações práticas. Compreende as informações de forma ampla e as organizam de forma clara e lógica. Tem propensão para a carreira científica. Gosta de explorar modelos analíticos e de ter tempo para pensar e refletir sobre as coisas. Esse estilo também é conhecido como TEÓRICO.";
-var descricaoDivergente = "Você aprende melhor combinando sensações com observações, ou seja através de atividades práticas seguidas de um retorno. Possui muita sensibilidade artística e conseguem ver as coisas de perspectivas diferentes. Prefere observar ao invés de agir. Suas estratégias para a solução de problemas iniciam coletando informações para em seguida usarem a criatividade e a inventividade para oferecer mais de uma solução possível. A denominação “divergentes” se dá pelo fato de terem bom desempenho em situações que requerem geração de ideias, como grupos de trabalho e brainstorms. Possuem vasto interesse cultural e gostam de pessoas. Preferem trabalhar em grupo, ouvindo sugestões com mente aberta e recebendo feedbacks pessoais. Gostam de autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEXIVO.";
+	var descricaoConvergente = "Você aprende melhor pensando e realizando. Combina o gosto de colocar “a mão na massa” com aspectos teóricos. Gosta de realizar atividades com indicações sequenciais detalhadas (como aquelas dos manuais de operação de aparelhos), solucionar problemas específicos e testar hipóteses (tentativa e erro). Tem habilidades em encontrar aplicações práticas para ideias e teorias. Pessoas desse estilo possuem poucas habilidades sociais e intrapessoais, preferindo ambientes de aprendizagem mais tranquilos (ex.: gosta de trabalha sozinho realizando tarefas técnicas sem se relacionarem com outras pessoas). Parecem se sair melhor em situações nas quais existe uma única resposta ou solução correta para cada pergunta ou problema. Não tem dificuldades ao experimentar inovações para solucionar problemas práticos. Esse estilo também é conhecido como PRAGMÁTICO.";
+	var descricaoAcomodador = "Você aprende melhor experimentando e realizando, como, por exemplo, através de atividades práticas, apresentações, role-plays e debates. Combina o gosto de colocar “a mão na massa” com atividades concretas. Tem capacidade de se sobressair e acomodar ou adaptar a circunstâncias imediatas específicas. Utiliza mais a intuição do que a lógica e tem a tendência a se arriscar mais a ousar mais. Costuma utilizar a opinião de outras pessoas ao invés das suas próprias, por isso geralmente faz muitas perguntas. Assume uma abordagem prática e vivencial. É sociável e gosta de trabalhar em equipe. Geralmente exerce um papel importante em situações onde são necessárias ações e iniciativas para a realização de tarefas. Por terem pouca habilidade analítica são impulsivas e as vezes é percebido como impaciente e pressionador. Esse estilo também é conhecido como ATIVISTA.";
+	var descricaoAssimilador = "Você aprende melhor combinando observação e pensamento, por isso suas preferências por palestras, conferências e aulas. Para eles, ideias e conceitos abstratos são mais importantes do que pessoas e pode ser percebido como pouco sociável. Tem facilidade com números e modelos conceituais, preferindo especulações abstratas em detrimento de situações práticas. Compreende as informações de forma ampla e as organizam de forma clara e lógica. Tem propensão para a carreira científica. Gosta de explorar modelos analíticos e de ter tempo para pensar e refletir sobre as coisas. Esse estilo também é conhecido como TEÓRICO.";
+	var descricaoDivergente = "Você aprende melhor combinando sensações com observações, ou seja através de atividades práticas seguidas de um retorno. Possui muita sensibilidade artística e conseguem ver as coisas de perspectivas diferentes. Prefere observar ao invés de agir. Suas estratégias para a solução de problemas iniciam coletando informações para em seguida usarem a criatividade e a inventividade para oferecer mais de uma solução possível. A denominação “divergentes” se dá pelo fato de terem bom desempenho em situações que requerem geração de ideias, como grupos de trabalho e brainstorms. Possuem vasto interesse cultural e gostam de pessoas. Preferem trabalhar em grupo, ouvindo sugestões com mente aberta e recebendo feedbacks pessoais. Gostam de autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEXIVO.";
 
 //RESULTADO 
 
@@ -469,62 +469,62 @@ var descricaoDivergente = "Você aprende melhor combinando sensações com obser
 
 //RESULTADOS
 
-							document.getElementById("resultado-final").innerHTML = " Seu estilo de aprendizado é " + estilo;
-								var forma1 = "concreta";
-								var forma2 = "reflexiva";
-								if (ap1 > 0) {
-									forma1 = "abstrata";
-								}
-								if (ap2 > 0) {
-									forma2 = "ativa"
-								}
-							document.getElementById("resultado-final2").innerHTML = " Sua forma de aprender é " + forma1 + " e " + forma2;
+				document.getElementById("resultado-final").innerHTML = " Seu estilo de aprendizado é " + estilo;
+					var forma1 = "concreta";
+					var forma2 = "reflexiva";
+					if (ap1 > 0) {
+						forma1 = "abstrata";
+					}
+					if (ap2 > 0) {
+						forma2 = "ativa"
+					}
+				document.getElementById("resultado-final2").innerHTML = " Sua forma de aprender é " + forma1 + " e " + forma2;
 
 			//Resultado da descricao
 
-			if (estilo == "CONVERGENTE") {
-				document.getElementById("resultado-descricao").innerHTML = descricaoConvergente;
-			}
+				if (estilo == "CONVERGENTE") {
+					document.getElementById("resultado-descricao").innerHTML = descricaoConvergente;
+				}
 
-			if (estilo == "ACOMODADOR") {
-				document.getElementById("resultado-descricao").innerHTML = descricaoAcomodador;
-			}
-			if (estilo == "ASSIMILADOR") {
-				document.getElementById("resultado-descricao").innerHTML = descricaoAssimilador;
-			}
-			if (estilo == "DIVERGENTE") {
-				document.getElementById("resultado-descricao").innerHTML = descricaoDivergente;
-			}
+				if (estilo == "ACOMODADOR") {
+					document.getElementById("resultado-descricao").innerHTML = descricaoAcomodador;
+				}
+				if (estilo == "ASSIMILADOR") {
+					document.getElementById("resultado-descricao").innerHTML = descricaoAssimilador;
+				}
+				if (estilo == "DIVERGENTE") {
+					document.getElementById("resultado-descricao").innerHTML = descricaoDivergente;
+				}
 
 // GERANDO GRAFICO
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'radar',
-    data: {
-        labels: ["Experiência Concreta", "Observação Reflexiva", "Conceituação Abstrata", "Experimentação Ativa"],
-        datasets: [{
-            label: 'Pontuação',
-            data: [EC, OR, CA, EA],
-            backgroundColor: ['rgba(99, 132, 255, 0.2)'],
-            borderColor: ['rgba(54, 162, 235, 1)'],
-            borderWidth: 1
-        }]
-    },
-    options: {
-			scale: {
-                ticks: {
-                    beginAtZero: true
-                }
-            },
-            legend: {
-            	display: false
-            }
-    }
-});
+	var ctx = document.getElementById("myChart");
+	var myChart = new Chart(ctx, {
+	    type: 'radar',
+	    data: {
+	        labels: ["Experiência Concreta", "Observação Reflexiva", "Conceituação Abstrata", "Experimentação Ativa"],
+	        datasets: [{
+	            label: 'Pontuação',
+	            data: [EC, OR, CA, EA],
+	            backgroundColor: ['rgba(99, 132, 255, 0.2)'],
+	            borderColor: ['rgba(54, 162, 235, 1)'],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+				scale: {
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            },
+	            legend: {
+	            	display: false
+	            }
+	    }
+	});
 
 
-		});
+			});
 
 
 //RESETANDO AS VARIAVEIS COM O FECHAMENTO DO MODAL
