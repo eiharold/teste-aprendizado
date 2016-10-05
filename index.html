@@ -50,21 +50,20 @@
 					</h4>
 				</center>
 				<hr>
-				<p>Abaixo você encontrará 12 sentenças. Cada sentença tem quatro campos de resposta (A, B, C, D). Classifique cada campo de forma a retratar a maneira como você age ao ter que aprender algo. Procure recordar de algumas situações recentes que você teve que aprender algo novo, seja no trabalho, na universidade ou em sua vida pessoal. Classifique com “4” o complemento da sentença que caracteriza como você aprende melhor, decrescendo até indicar “1” para o complemento da sentença que caracteriza a maneira menos provável de como você aprende algo.
-				<br>
-				Assegure-se de que todas as respostas foram emitidas para cada sentença.</p>
-
+				<p>Você encontrará 12 sentenças, cada uma com quatro campos de resposta. Classifique cada campo de forma a retratar a maneira como você age ao ter que aprender algo. Procure recordar de algumas situações recentes que você teve que aprender algo novo, seja no trabalho, na universidade ou em sua vida pessoal.</p>
+				<p>Classifique com 4 o complemento da sentença que caracteriza como você aprende melhor, decrescendo até indicar 1 para o complemento da sentença que caracteriza a maneira menos provável de como você aprende algo.</p>
+				<p>Assegure-se de que todas as respostas foram emitidas para cada sentença.</p>
+				<hr><br>
 
 			<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 campos2"> <!-- bloco de perguntas -->
 				<!-- Pergunta 1 -->
-				<hr>
 				<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 campos2">
 					<h3>1. Enquanto aprendo...</h3>
 				</div>
 				<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 campos2">
 					<label>gosto de lidar com meus sentimentos</label><br>
-						<form id="formulario">
-						<div class="radio-inline" id="1r1">
+						<form>
+						<div class="radio-inline">
 						<label class="radio-inline"><input type="radio" name="1opA" class="linha1 coluna1 p1" value="1">1</label>
 						<label class="radio-inline"><input type="radio" name="1opA" class="linha1 coluna2 p1" value="2">2</label>
 						<label class="radio-inline"><input type="radio" name="1opA" class="linha1 coluna3 p1" value="3">3</label>
@@ -73,7 +72,7 @@
 						</form>
 					<br><label>gosto de pensar sobre ideias</label><br>
 						<form>
-						<div class="radio-inline" id="1r2">
+						<div class="radio-inline">
 						<label class="radio-inline"><input type="radio" name="1opB" class="linha2 coluna1 p1" value="1">1</label>
 						<label class="radio-inline"><input type="radio" name="1opB" class="linha2 coluna2 p1" value="2">2</label>
 						<label class="radio-inline"><input type="radio" name="1opB" class="linha2 coluna3 p1" value="3">3</label>
@@ -82,7 +81,7 @@
 						</form>
 					<br><label>gosto de estar fazendo coisas</label><br>
 						<form>
-						<div class="radio-inline" id="1r3">
+						<div class="radio-inline">
 						<label class="radio-inline"><input type="radio" name="1opC" class="linha3 coluna1 p1" value="1">1</label>
 						<label class="radio-inline"><input type="radio" name="1opC" class="linha3 coluna2 p1" value="2">2</label>
 						<label class="radio-inline"><input type="radio" name="1opC" class="linha3 coluna3 p1" value="3">3</label>
@@ -91,7 +90,7 @@
 						</form>
 					<br><label>gosto de observar e escutar</label><br>
 						<form>
-						<div class="radio-inline" id="1r4">
+						<div class="radio-inline">
 						<label class="radio-inline"><input type="radio" name="1opD" class="linha4 coluna1 p1" value="1">1</label>
 						<label class="radio-inline"><input type="radio" name="1opD" class="linha4 coluna2 p1" value="2">2</label>
 						<label class="radio-inline"><input type="radio" name="1opD" class="linha4 coluna3 p1" value="3">3</label>
@@ -635,7 +634,9 @@
 					<h3>
 					<a href="https://github.com/interfaceslivres?tab=repositories"><img src="images/logo-interfaces-mini.jpg"> </a>
 					</h3>
+					<!-- Botao de info - desabilitado
 					<a href="#" id="info"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a>
+					-->
 		      </footer>
 
 			</div>
@@ -649,21 +650,26 @@
 						<div class="modal-header">
 							 
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
-							<h4 class="modal-title" id="myModalLabel">Resultado:</h4>
+							<h4 class="modal-title" id="myModalLabel">RESULTADO</h4>
 						</div>
 						<div class="modal-body">
 							<h1 id="resultado"></h1>
-							<h3 id="resultado-final"></h3>
 		  
 <!-- Grafico -->
 		  <canvas id="myChart" width="200" height="100"></canvas>						
 					<br>
-							<h4 id="resultado-final2"></h4><br><hr>					
+												<h3 id="resultado-final"></h3>
+							<h4 id="resultado-final2"></h4>					
 
 </center>
 
 <!-- Fim grafico / Inicio descricao -->
+	<br>
+	<p id="resultado-descricao"></p>
+	<br>
+	<hr>
 
+<!--Descricao dos demais estilos -->
 <br>
 
 <h4>DESCRIÇÃO DOS ESTILOS DE APRENDIZAGEM</h4>
@@ -749,6 +755,10 @@ ouvindo sugestões com mente aberta e recebendo feedbacks pessoais. Gostam de
 autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEXIVO.</p>
 
 
+<br>
+
+<input button type="button" data-dismiss="modal" value="Refazer teste" id="refazer">
+
 						</div>
 						<div class="modal-footer">
 							 
@@ -759,7 +769,8 @@ autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEX
 				
 			</div>
 			
-<!-- Fim resultado / Inicio Box Info -->
+<!-- Fim resultado / Inicio Box Info (( DESABILITADO )) -->
+<!--
 			<div class="modal fade" id="modal-container-info" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog  modal-lg">
 					<div class="modal-content">
@@ -784,8 +795,7 @@ autonomia na busca de conhecimento. Esse estilo também é conhecido como REFLEX
 				</div>
 				
 			</div>
-		
-
+-->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
