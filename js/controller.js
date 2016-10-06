@@ -66,6 +66,76 @@ $(document).ready(function() {
 
 	$("#botao").click(function() {					
 
+				//Condicional para obrigar a marcar todos os campos
+
+				if (!(($("input:radio[name='1opA']").is(":checked"))&&
+						($("input:radio[name='1opB']").is(":checked"))&&
+						($("input:radio[name='1opC']").is(":checked"))&&
+						($("input:radio[name='1opD']").is(":checked"))&&
+
+						($("input:radio[name='2opA']").is(":checked"))&&
+						($("input:radio[name='2opB']").is(":checked"))&&
+						($("input:radio[name='2opC']").is(":checked"))&&
+						($("input:radio[name='2opD']").is(":checked"))&&
+						
+						($("input:radio[name='3opA']").is(":checked"))&&
+						($("input:radio[name='3opB']").is(":checked"))&&
+						($("input:radio[name='3opC']").is(":checked"))&&
+						($("input:radio[name='3opD']").is(":checked"))&&
+						
+						($("input:radio[name='4opA']").is(":checked"))&&
+						($("input:radio[name='4opB']").is(":checked"))&&
+						($("input:radio[name='4opC']").is(":checked"))&&
+						($("input:radio[name='4opD']").is(":checked"))&&
+						
+						($("input:radio[name='5opA']").is(":checked"))&&
+						($("input:radio[name='5opB']").is(":checked"))&&
+						($("input:radio[name='5opC']").is(":checked"))&&
+						($("input:radio[name='5opD']").is(":checked"))&&
+						
+						($("input:radio[name='6opA']").is(":checked"))&&
+						($("input:radio[name='6opB']").is(":checked"))&&
+						($("input:radio[name='6opC']").is(":checked"))&&
+						($("input:radio[name='6opD']").is(":checked"))&&
+						
+						($("input:radio[name='7opA']").is(":checked"))&&
+						($("input:radio[name='7opB']").is(":checked"))&&
+						($("input:radio[name='7opC']").is(":checked"))&&
+						($("input:radio[name='7opD']").is(":checked"))&&
+						
+						($("input:radio[name='8opA']").is(":checked"))&&
+						($("input:radio[name='8opB']").is(":checked"))&&
+						($("input:radio[name='8opC']").is(":checked"))&&
+						($("input:radio[name='8opD']").is(":checked"))&&
+						
+						($("input:radio[name='9opA']").is(":checked"))&&
+						($("input:radio[name='9opB']").is(":checked"))&&
+						($("input:radio[name='9opC']").is(":checked"))&&
+						($("input:radio[name='9opD']").is(":checked"))&&
+						
+						($("input:radio[name='10opA']").is(":checked"))&&
+						($("input:radio[name='10opB']").is(":checked"))&&
+						($("input:radio[name='10opC']").is(":checked"))&&
+						($("input:radio[name='10opD']").is(":checked"))&&
+						
+						($("input:radio[name='11opA']").is(":checked"))&&
+						($("input:radio[name='11opB']").is(":checked"))&&
+						($("input:radio[name='11opC']").is(":checked"))&&
+						($("input:radio[name='11opD']").is(":checked"))&&
+						
+						($("input:radio[name='12opA']").is(":checked"))&&
+						($("input:radio[name='12opB']").is(":checked"))&&
+						($("input:radio[name='12opC']").is(":checked"))&&
+						($("input:radio[name='12opD']").is(":checked"))))
+						
+						{
+											window.scrollTo(0, 0);
+											alert("Preencha todos os campos!");
+
+						}
+
+				else {
+
 					//Abre a popup
 
 					$('#modal-container-resultado').modal({
@@ -496,6 +566,8 @@ $(document).ready(function() {
 					document.getElementById("resultado-descricao").innerHTML = descricaoDivergente;
 				}
 
+		}
+
 // GERANDO GRAFICO
 
 	var ctx = document.getElementById("myChart");
@@ -522,7 +594,6 @@ $(document).ready(function() {
 	            }
 	    }
 	});
-
 
 			});
 
