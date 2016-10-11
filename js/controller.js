@@ -71,14 +71,37 @@ $(document).ready(function() {
 				if (!(($("input:radio[name='1opA']").is(":checked"))&&
 						($("input:radio[name='1opB']").is(":checked"))&&
 						($("input:radio[name='1opC']").is(":checked"))&&
-						($("input:radio[name='1opD']").is(":checked"))&&
+						($("input:radio[name='1opD']").is(":checked")))) {
 
-						($("input:radio[name='2opA']").is(":checked"))&&
+
+											$('html, body').animate({
+											        scrollTop: $("#s1").offset().top
+											    }, 1300);
+											alert("Preencha todos os campos!");
+											$('#s1').css("color","red");
+											$('#s1').append("<br>preencha todos os campos");
+											$('#modal-alerta').modal({
+							      					show: true
+							    				});
+
+						
+						}
+				else if  (!(($("input:radio[name='2opA']").is(":checked"))&&
 						($("input:radio[name='2opB']").is(":checked"))&&
 						($("input:radio[name='2opC']").is(":checked"))&&
-						($("input:radio[name='2opD']").is(":checked"))&&
+						($("input:radio[name='2opD']").is(":checked")))) {
+
+
+											$('html, body').animate({
+											        scrollTop: $("#s2").offset().top
+											    }, 1300);
+											alert("Preencha todos os campos!");
+											$('#s1').css("color","black");
+											$('#s2').css("color","red");
+
 						
-						($("input:radio[name='3opA']").is(":checked"))&&
+						}
+				else if  (!(($("input:radio[name='3opA']").is(":checked"))&&
 						($("input:radio[name='3opB']").is(":checked"))&&
 						($("input:radio[name='3opC']").is(":checked"))&&
 						($("input:radio[name='3opD']").is(":checked"))&&
@@ -131,6 +154,7 @@ $(document).ready(function() {
 						{
 											window.scrollTo(0, 0);
 											alert("Preencha todos os campos!");
+											$('#s1').css("color","red");
 
 						}
 
