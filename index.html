@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <title>Teste de Aprendizado</title>
 
@@ -27,8 +28,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-validation.js"></script>
-    <script src="js/additional-methods.js"></script>
     <script src="js/controller.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 
@@ -39,23 +38,29 @@
     	<div class="container">
 			<div class="jumbotron">
 				<div class="header col-xs-12 col-lg-12 col-md-12 col-sm-12">
-					<div class="col-md-12 logo">
+					<div class="col-xs-12 col-sm-3 logo">
 						<a href="http://www.cchla.ufpb.br/ccmd/"><img src="images/logo.png"></img></a>
 					</div>
-				<h3 class="text-muted">INVENTÁRIO DE ESTILO DE APRENDIZAGEM</h3>
+					<div class="col-xs-12 col-sm-9" id="titulao">
+				<h3 class="text-muted">Inventário de Estilo de Aprendizagem de Kolb</h3>
+					</div>
 				</div>
 				<center>
+				<div class="col-xs-12">
 					<h4>
-					O questionário abaixo foi idealizado por David A. Kolb e descreve a maneira pela qual você aprende e como lida com ideias e situações do dia-a-dia em sua vida.
+					O questionário abaixo foi idealizado por David A. Kolb e descreve a maneira pela qual você aprende e como lida com ideias e situações do dia-a-dia em sua vida.<br><br>
 					</h4>
 				</center>
-				<hr>
+
+				<div class="col-xs-12" id="explicacao">
+
 				<p>Você encontrará 12 sentenças, cada uma com quatro campos de resposta. Classifique cada campo de forma a retratar a maneira como você age ao ter que aprender algo. Procure recordar de algumas situações recentes que você teve que aprender algo novo, seja no trabalho, na universidade ou em sua vida pessoal.</p>
-				<p>Classifique com 4 o complemento da sentença que caracteriza como você aprende melhor, decrescendo até indicar 1 para o complemento da sentença que caracteriza a maneira menos provável de como você aprende algo.</p>
-				<p>Assegure-se de que todas as respostas foram emitidas para cada sentença.</p>
-				<hr><br>
+				<p>Classifique com 4 o complemento da sentença que caracteriza como você aprende melhor, decrescendo até indicar 1 para o complemento da sentença que caracteriza a maneira menos provável de como você aprende algo. Assegure-se de responder todas as sentenças.</p>
+				</div>
+
 
 			<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 campos2"> <!-- bloco de perguntas -->
+			<br><br>
 				<!-- Pergunta 1 -->
 				<div class="col-xs-12 col-lg-6 col-md-6 col-sm-6 campos2">
 					<h3 id="s1">1. Enquanto aprendo...</h3>
@@ -623,8 +628,8 @@
 			</div>	
 					<!-- Frase Motivacional -->
 				<center>
-					<div id="motivacional" class="frase-motivadora text-muted " style="font-size: 14px;"></div>
-					<div class="linha"></div>	
+					<i><div id="motivacional" class="frase-motivadora text-muted " style="font-size: 14px;"></div></i>
+						
 					<input class="submit btn btn-lg btn-success" value="Resultado" id="botao" type="submit">
 				</center>
 			</form>
@@ -645,7 +650,7 @@
 	
 <!-- Box Alerta -->
 		<div class="modal fade" id="modal-alerta" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog  modal-lg">
+				<div class="modal-dialog  modal-lg" id="modal-preencher">
 					<div class="modal-content">
 						<div class="modal-header">
 							 
@@ -653,10 +658,14 @@
 							<h4 class="modal-title" id="myModalLabel">Oops</h4>
 						</div>
 						<div class="modal-body">
-							<h1 id="resultado"></h1>
+							<p>Preencha todos os campos!</p>
+						</div>
+					</div>
+				</div>
+		</div>
 
 <!-- Box resultado -->
-		<div class="modal fade" id="modal-container-resultado" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade modal-alerta-2" id="modal-container-resultado" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog  modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
